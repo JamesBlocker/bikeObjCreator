@@ -11,7 +11,7 @@
     
     function bikeList() {
 
-        var motoObj = [];
+        var motoArr = [];
         var motoBrand;
         var motoModel;
         var numOfCycles = prompt("How many motorcycles would you like to create?");
@@ -20,10 +20,12 @@
             motoBrand = prompt("Name a brand");
             motoModel = prompt("Name a model");
 
-            motoObj[i] = {brand: motoBrand, model: motoModel}
+            motoArr[i] = {brand: motoBrand, model: motoModel}
         }
 
-        console.log(motoObj);
+        for (var i = 0; i < motoArr.length; i++) {
+            console.log(motoArr[i]);
+        }
     }
     
     </script>
