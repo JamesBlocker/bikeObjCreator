@@ -9,19 +9,22 @@
 <body>
     <script>
     
-    var motoObj = [];
-    var motoBrand;
-    var motoModel;
-    var numOfCycles = prompt("How many motorcycles would you like to create?");
+    function bikeList() {
 
-    for (var i = 0; i < numOfCycles; i++) {
-        motoBrand = prompt("Name a brand");
-        motoModel = prompt("Name a model");
+        var motoObj = [];
+        var motoBrand;
+        var motoModel;
+        var numOfCycles = prompt("How many motorcycles would you like to create?");
 
-        motoObj[i] = {brand: motoBrand, model: motoModel}
+        for (var i = 0; i < numOfCycles; i++) {
+            motoBrand = prompt("Name a brand");
+            motoModel = prompt("Name a model");
+
+            motoObj[i] = {brand: motoBrand, model: motoModel}
+        }
+
+        console.log(motoObj);
     }
-
-    console.log(motoObj);
     
     </script>
 </body>
